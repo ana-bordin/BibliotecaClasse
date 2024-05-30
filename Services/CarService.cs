@@ -17,9 +17,9 @@ namespace Services
             return _repository.Insert(car);
         }
 
-        public bool Update(int id)
+        public bool Update(Car car)
         {
-            return _repository.Update(id);
+            return _repository.Update(car);
         }
 
         public bool Delete(int id)

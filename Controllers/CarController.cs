@@ -18,9 +18,9 @@ namespace Controllers
             return _carService.Insert(car);
         }
 
-        public bool Update(int id)
+        public bool Update(Car car)
         {
-            return _carService.Update(id);
+            return _carService.Update(car);
         }
 
         public bool Delete(int id)
