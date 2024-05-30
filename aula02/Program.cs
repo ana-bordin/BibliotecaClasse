@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using Controllers;
+using Models;
 using System.ComponentModel.DataAnnotations;
 
 namespace aula02
@@ -15,7 +16,9 @@ namespace aula02
                 Color = "Azul",
                 Year = 1970
             };
+            
             Console.WriteLine(car);
+            Console.WriteLine(new CarController().Insert(car) ? "Carro inserido com sucesso" : "Falha ao inserir carro");
         }
     }
 }
